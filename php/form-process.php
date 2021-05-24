@@ -1,4 +1,5 @@
 <?php
+include 'mailer/config.php';
 
 $errorMSG = "";
 
@@ -51,14 +52,15 @@ $Body .= $message;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = sendMail($EmailTo,$Subject,$Body);   
+// $success = mail($EmailTo, $Subject, $Body, "From:".$email);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";
 }else{
     if($errorMSG == ""){
-        echo "Something went wrong :(";
+        echo $success;
     } else {
         echo $errorMSG;
     }
