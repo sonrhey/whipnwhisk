@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
   </head>
   <body>
@@ -32,7 +36,7 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a href="#" class="navbar-brand"><img class="img-fulid" style="width: 3em" src="img/hd_logo.png" alt=""></a>
+            <a href="#" class="navbar-brand"><img class="img-fulid" src="img/wnw.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <i class="lnr lnr-menu"></i>
             </button>
