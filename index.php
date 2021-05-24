@@ -289,6 +289,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>    
     <script src="js/waypoints.min.js"></script>    
     <script src="js/form-validator.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/contact-form-script.js"></script>   
     <script src="js/main.js"></script>
 

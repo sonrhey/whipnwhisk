@@ -18,20 +18,41 @@ function submitForm(){
     var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
 
+    Email.send({
+        SecureToken : "1a0fd5c2-43fc-4d57-a683-a961f68c30d3",
+        To :   "sonrheydeiparine2@gmail.com",
+        From : email,
+        Subject : "New Order",
+        Body : message
+    }).then(
+      message => alert(message)
+    );
 
-    $.ajax({
-        type: "POST",
-        url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false,text);
-            }
-        }
-    });
+    // Email.send({
+    //     Host : "smtp.elasticemail.com",
+    //     Username : "noreply@whipnwhisk.com",
+    //     Password : "34BE921916E6DD0BC70570C95FB8E10344B9",
+    //     To : 'sonrheydeiparine2@gmail.com',
+    //     From : email,
+    //     Subject : "sdsd",
+    //     Body : message
+    // }).then(
+    //   message => alert(message)
+    // );
+
+    // $.ajax({
+    //     type: "POST",
+    //     url: "php/form-process.php",
+    //     data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+    //     success : function(text){
+    //         if (text == "success"){
+    //             formSuccess();
+    //         } else {
+    //             formError();
+    //             submitMSG(false,text);
+    //         }
+    //     }
+    // });
 }
 
 function formSuccess(){
