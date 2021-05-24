@@ -89,7 +89,7 @@
         <div class="section-header">          
           <h2 class="section-title">Our Products</h2>
           <hr class="lines">
-          <p class="section-subtitle">Below are the list of best selling products.</p>
+          <p class="section-subtitle">Below are the list of our best selling products.</p>
         </div>
         <div class="row">          
           <div class="col-md-12">
